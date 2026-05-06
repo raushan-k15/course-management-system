@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* .input {
+  @apply bg-white/20 text-white placeholder-gray-300 p-3 rounded-xl outline-none border border-white/20 focus:ring-2 focus:ring-pink-400;
+} */
+
+.input {
+  @apply bg-white/20 text-white px-4 py-2 rounded-xl border border-white/20 outline-none focus:ring-2 focus:ring-pink-400;
+}
+
+.label {
+  @apply text-sm text-gray-200 mb-1;
+}
