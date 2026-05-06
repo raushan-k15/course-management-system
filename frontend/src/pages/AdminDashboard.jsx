@@ -57,7 +57,7 @@ const AdminDashboard = () => {
 
     const res =
       await axios.get(
-        "http://localhost:3000/course"
+        "https://course-management-system-zibg.onrender.com/course"
       );
 
 
@@ -98,7 +98,7 @@ const AdminDashboard = () => {
       ) {
 
         await axios.put(
-          `http://localhost:3000/course/${editId}`,
+          `https://course-management-system-zibg.onrender.com/course/${editId}`,
           form
         );
 
@@ -113,7 +113,7 @@ const AdminDashboard = () => {
       else {
 
         await axios.post(
-          "http://localhost:3000/course",
+          "https://course-management-system-zibg.onrender.com/course",
           form
         );
 
@@ -194,7 +194,7 @@ const AdminDashboard = () => {
     ) => {
 
     await axios.delete(
-      `http://localhost:3000/course/${id}`
+      `https://course-management-system-zibg.onrender.com/course/${id}`
     );
 
 

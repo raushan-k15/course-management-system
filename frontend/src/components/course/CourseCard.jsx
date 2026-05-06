@@ -51,7 +51,7 @@ const CourseCard = ({
       // Existing course check
       const res =
         await axios.get(
-          `http://localhost:3000/cart?userId=${user.id}&courseId=${id}`
+          `https://course-management-system-zibg.onrender.com/cart?userId=${user.id}&courseId=${id}`
         );
 
 
@@ -68,7 +68,7 @@ const CourseCard = ({
 
 
         await axios.patch(
-          `http://localhost:3000/cart/${existing.id}`,
+          `https://course-management-system-zibg.onrender.com/cart/${existing.id}`,
           {
 
             quantity:
@@ -85,7 +85,7 @@ const CourseCard = ({
       else {
 
         await axios.post(
-          "http://localhost:3000/cart",
+          "https://course-management-system-zibg.onrender.com/cart",
           {
 
             userId:

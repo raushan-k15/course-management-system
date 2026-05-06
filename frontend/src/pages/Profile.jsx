@@ -85,7 +85,7 @@ const Profile = () => {
 
       const res =
         await axios.get(
-          `http://localhost:3000/profile?userId=${user.id}`
+          `https://course-management-system-zibg.onrender.com/profile?userId=${user.id}`
         );
 
       if (
@@ -188,7 +188,7 @@ const Profile = () => {
       ) {
 
         await axios.put(
-          `http://localhost:3000/profile/${profileId}`,
+          `https://course-management-system-zibg.onrender.com/profile/${profileId}`,
           payload
         );
 
@@ -196,7 +196,7 @@ const Profile = () => {
 
         const res =
           await axios.post(
-            "http://localhost:3000/profile",
+            "https://course-management-system-zibg.onrender.com/profile",
             payload
           );
 

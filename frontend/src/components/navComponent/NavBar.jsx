@@ -57,7 +57,7 @@ const Navbar = () => {
 
         const res =
           await axios.get(
-            `http://localhost:3000/cart?userId=${user.id}`
+            `https://course-management-system-zibg.onrender.com/cart?userId=${user.id}`
           );
 
         const totalQty =
@@ -109,7 +109,7 @@ const Navbar = () => {
 
         const res =
           await axios.get(
-            `http://localhost:3000/profile?userId=${user.id}`
+            `https://course-management-system-zibg.onrender.com/profile?userId=${user.id}`
           );
 
         if (

@@ -54,7 +54,7 @@ const Cart = () => {
 
       const res =
         await axios.get(
-          `http://localhost:3000/cart?userId=${user.id}`
+          `https://course-management-system-zibg.onrender.com/cart?userId=${user.id}`
         );
 
 
@@ -89,7 +89,7 @@ const Cart = () => {
     ) => {
 
     await axios.patch(
-      `http://localhost:3000/cart/${item.id}`,
+      `https://course-management-system-zibg.onrender.com/cart/${item.id}`,
       {
 
         quantity:
@@ -130,7 +130,7 @@ const Cart = () => {
 
 
     await axios.patch(
-      `http://localhost:3000/cart/${item.id}`,
+      `https://course-management-system-zibg.onrender.com/cart/${item.id}`,
       {
 
         quantity:
@@ -163,7 +163,7 @@ const Cart = () => {
     ) => {
 
     await axios.delete(
-      `http://localhost:3000/cart/${id}`
+      `https://course-management-system-zibg.onrender.com/cart/${id}`
     );
 
 
@@ -351,7 +351,7 @@ const Cart = () => {
             ) {
 
               await axios.post(
-                "http://localhost:3000/orders",
+                "https://course-management-system-zibg.onrender.com/orders",
                 {
 
                   userId:
@@ -382,7 +382,7 @@ const Cart = () => {
             ) {
 
               await axios.delete(
-                `http://localhost:3000/cart/${item.id}`
+                `https://course-management-system-zibg.onrender.com/cart/${item.id}`
               );
 
             }
@@ -508,7 +508,7 @@ const Cart = () => {
       <div className="
         grid md:grid-cols-3
         gap-10
-        ç
+        
       ">
 
         {/* LEFT */}

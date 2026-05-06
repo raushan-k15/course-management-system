@@ -31,7 +31,7 @@ const SignUp = () => {
 
     // ! checking if user already exists
     let alreadyExist = await axios.get(
-      `http://localhost:3000/users?email=${email}`,
+      `https://course-management-system-zibg.onrender.com/users?email=${email}`,
     );
     console.log(alreadyExist);
 
@@ -39,7 +39,7 @@ const SignUp = () => {
       toast.error("User Already Exists");
     } else {
       try {
-        let res = await axios.post("http://localhost:3000/users", formData);
+        let res = await axios.post("https://course-management-system-zibg.onrender.com/users", formData);
         console.log(res);
         if (res.status == 201) {
           toast.success("Account Created Successfully");

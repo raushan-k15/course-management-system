@@ -18,7 +18,7 @@ const CourseList = () => {
 
         const res =
           await axios.get(
-            "http://localhost:3000/course"
+            "https://course-management-system-zibg.onrender.com/course"
           );
 
         setAllCourses(
