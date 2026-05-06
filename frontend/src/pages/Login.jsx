@@ -33,9 +33,10 @@ const Login = () => {
     }
 
     try {
-      let res = await axios.get(
-        `https://course-management-system-zibg.onrender.com /users?email=${email}&password=${password}&role=${role}`
-      );
+  let res =
+  await axios.get(
+    `https://course-management-system-zibg.onrender.com/users?email=${email}&password=${password}&role=${role}`
+  );
 
       if (res.status === 200 && res.data.length > 0) {
         login(res.data[0]);
